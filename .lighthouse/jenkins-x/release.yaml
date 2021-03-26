@@ -44,13 +44,7 @@ spec:
           resources: {}
         - name: promote-helm-release
           resources: {}
-        - image: ghcr.io/jenkins-x/jx-promote:0.0.241
-          name: promote-jx-promote
-          resources: {}
-          script: |
-            #!/usr/bin/env sh
-            source .jx/variables.sh
-            jx promote -b --env staging --timeout 1h --no-poll
+        - name: promote-jx-promote
         volumes:
         - name: npmrc
           secret:
