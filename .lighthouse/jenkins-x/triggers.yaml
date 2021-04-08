@@ -12,7 +12,7 @@ spec:
     context: "release"
     source: "release.yaml"
     ignore_changes: |
-      ^action\.yml
+      ^/?action\.yml
     branches:
     - ^main$
     - ^master$
