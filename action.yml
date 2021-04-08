@@ -3,7 +3,7 @@ name: 'jx-release-version'
 description: 'https://github.com/jenkins-x-plugins/jx-release-version'
 branding:
   icon: 'tag'
-  color: 'green'
+  color: 'green2'
 inputs:
   previous-version:
     description: 'The strategy to detect the previous version: auto, from-tag, from-file or manual'
