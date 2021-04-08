@@ -63,6 +63,21 @@ spec:
           resources: {}
         - name: promote-jx-promote
           resources: {}
+        - image: gcr.io/jenkinsxio/jx-changelog:0.0.36
+          name: promote-action
+          resources: {}
+          script: |
+            #!/usr/bin/env sh
+            source .jx/variables.sh
+
+            git clone https://github.com/jstrachan/nodey560 update-action
+            cd update-action
+            sed -i -e "s|gcr.io/jenkinsxio/jx-release-version:.*|gcr.io/jenkinsxio/jx-release-version:$VERSION|" action.yml
+            else echo no charts; fi
+
+            git add * || true
+            git commit -a -m "chore: upgrade image to $VERSION" --allow-empty
+            #git push
         volumes:
         - name: npmrc
           secret:
