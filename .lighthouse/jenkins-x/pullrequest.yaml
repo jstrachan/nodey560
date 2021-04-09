@@ -26,7 +26,7 @@ spec:
           resources: {}
         - image: node:12-slim
           name: my-custom-step
-          script: |
+          script2: |
             #!/bin/sh
             echo "WOW AWESOME"
         - name: build-npm-install
