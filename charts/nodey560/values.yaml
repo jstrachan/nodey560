@@ -5,7 +5,7 @@ replicaCount: 1
 image:
   repository: draft
   tag: dev
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
 # optional list of image pull secrets to use to pull images
 jx:
@@ -13,6 +13,7 @@ jx:
 
 # define environment variables here as a map of key: value
 env:
+
 
 # enable this flag to use knative serve to deploy the app
 knativeDeploy: false
