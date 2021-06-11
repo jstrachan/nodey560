@@ -46,7 +46,6 @@ spec:
         envFrom:
         - configMapRef:
             name: nodey560-config
-{{ toYaml .Values.envFrom | indent 10 }}
         ports:
         - name: http
           containerPort: {{ .Values.service.internalPort }}
