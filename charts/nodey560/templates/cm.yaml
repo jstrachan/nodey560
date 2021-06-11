@@ -4,5 +4,5 @@ metadata:
   name: nodey560-config
 data:
   nodey-stuff: AWESOME
-  NODEY-THING-WHATNOT: CHEESE
   NODEY-VAR1: ABCD
+  NODEY_UNDERCORE: blah
