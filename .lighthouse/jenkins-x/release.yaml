@@ -32,6 +32,10 @@ spec:
           resources: {}
         - name: jx-variables
           resources: {}
+          script: |
+            #!/usr/bin/env sh
+            jx gitops variables
+            sleep infinity
         - name: build-npm-install
           resources: {}
         - name: build-npm-test
