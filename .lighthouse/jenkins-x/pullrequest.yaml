@@ -24,6 +24,11 @@ spec:
           resources: {}
         - name: jx-variables
           resources: {}
+        - image: node:12-slim
+          name: my-custom-step
+          script: |
+            #!/bin/sh
+            echo "NEW MESSAGE AWESOME"
         - name: build-npm-install
           resources: {}
         - name: build-npm-test
